@@ -1,0 +1,4 @@
+rootProject.name = 'practice_webclient'
+include 'common-service'
+include 'course-service'
+include 'student-service'

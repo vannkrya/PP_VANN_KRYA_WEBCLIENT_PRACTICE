@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: krya
+    url: jdbc:postgresql://localhost:5432/practice_webclient
+  application:
+    name: student-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8000
+  servlet:
+    context-path: /student-service
+
+courseService:
+  base:
+    url: http://localhost:9000/api/v1/courses/
